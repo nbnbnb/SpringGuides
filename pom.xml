@@ -14,7 +14,7 @@
 
     <modules>
         <module>./RestService</module>
-        <module>SchedulingTasks</module>
+        <module>./SchedulingTasks</module>
     </modules>
 
     <build>
