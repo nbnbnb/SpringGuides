@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gs-mybatis" />
         <module name="gs-rest-service" />
+        <module name="MyBatis" />
         <module name="RestService" />
         <module name="SchedulingTasks" />
       </profile>
