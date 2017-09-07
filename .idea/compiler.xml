@@ -6,13 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gs-mybatis" />
         <module name="gs-rest-service" />
+        <module name="MyBatis" />
         <module name="RestService" />
         <module name="SchedulingTasks" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="gs-mybatis" target="1.8" />
       <module name="gs-rest-service" target="1.8" />
+      <module name="MyBatis" target="1.8" />
       <module name="RestService" target="1.8" />
       <module name="SchedulingTasks" target="1.8" />
       <module name="SpringGuides" target="1.8" />
