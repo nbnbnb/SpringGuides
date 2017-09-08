@@ -1,4 +1,4 @@
-package sample.mybatis;
+package sample.mybatis.config;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -11,26 +11,14 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.io.IOException;
 import java.io.InputStream;
 
 @Configuration
 @MapperScan("sample.mybatis.mapper")  // 设置 Mybatis Mapper 扫描路径
+@EnableTransactionManagement  // 自动开启注解事务的支持
 public class AppConfig {
 
-    @Autowired
-    private SqlSessionFactory sqlSessionFactory;
-
-    @Bean
-    public SqlSessionFactory getSqlSessionFactoryForSQLServer() throws IOException {
-        String resource = "mybatis-config.xml";  // 从 XML 文件中获取 DataSource 数据
-        InputStream inputStream = Resources.getResourceAsStream(resource);
-        return new SqlSessionFactoryBuilder().build(inputStream);
-    }
-
-    @Bean
-    public SqlSession getSqlSession() {
-        return sqlSessionFactory.openSession();
-    }
 }

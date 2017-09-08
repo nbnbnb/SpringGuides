@@ -17,12 +17,20 @@ package sample.mybatis.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import sample.mybatis.domain.Hotel;
 
 /**
  * @author Eduardo Macarron
  */
 @Mapper
+// 设置事务
+@Transactional(propagation = Propagation.REQUIRED,
+        isolation = Isolation.READ_UNCOMMITTED,
+        timeout = 36000,
+        rollbackFor = Exception.class)
 public interface HotelMapper {
 
 	Hotel selectByCityId(int city_id);

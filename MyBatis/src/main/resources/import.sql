@@ -1,39 +1,8 @@
-IF OBJECT_ID('city') IS NOT NULL
-    BEGIN
-        DROP TABLE city;
-    END;
-IF OBJECT_ID('hotel') IS NOT NULL
-    BEGIN
-        DROP TABLE hotel;
-    END;
+drop table if exists city;
+drop table if exists hotel;
 
-CREATE TABLE city
-    (
-      id INT PRIMARY KEY
-             IDENTITY ,
-      name VARCHAR(500) ,
-      state VARCHAR(500) ,
-      country VARCHAR(500)
-    );
-CREATE TABLE hotel
-    (
-      city INT ,
-      name VARCHAR(500) ,
-      address VARCHAR(500) ,
-      zip VARCHAR(500)
-    );
+create table city (id int primary key IDENTITY , name varchar(500), state varchar(500), country varchar(500));
+create table hotel (city int, name varchar(500), address varchar(500), zip varchar(500));
 
-INSERT  INTO city
-        ( name, state, country )
-VALUES  ( 'San Francisco', 'CA', 'US' );
-INSERT  INTO hotel
-        ( city ,
-          name ,
-          address ,
-          zip
-        )
-VALUES  ( 1 ,
-          'Conrad Treasury Place' ,
-          'William & George Streets' ,
-          '4001'
-        );
+insert into city (name, state, country) values ('San Francisco', 'CA', 'US');
+insert into hotel(city, name, address, zip) values (1, 'Conrad Treasury Place', 'William & George Streets', '4001');
