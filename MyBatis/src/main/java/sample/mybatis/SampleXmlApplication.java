@@ -38,7 +38,6 @@ public class SampleXmlApplication implements CommandLineRunner {
 		this.hotelMapper = hotelMapper;
 	}
 
-	@Override
 	public void run(String... args) throws Exception {
 		System.out.println(this.cityDao.selectCityById(1));
 		System.out.println(this.hotelMapper.selectByCityId(1));
