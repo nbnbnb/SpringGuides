@@ -15,7 +15,7 @@ public class Application {
     void init() {
         // 在 SchedulingTasks 目录下运行 mvn:srping-boot:run
         // 当修改类文件时，会自动编译加载
-        System.out.println("This iefwfwfs a test file for debug" + LocalDateTime.now());
+        System.out.println("System is Running... " + LocalDateTime.now());
     }
 
     public static void main(String[] args) throws Exception {
