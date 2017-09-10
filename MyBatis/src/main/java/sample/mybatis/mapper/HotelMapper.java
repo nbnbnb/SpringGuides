@@ -28,11 +28,15 @@ import sample.mybatis.domain.Hotel;
 @Mapper
 // 设置事务
 @Transactional(propagation = Propagation.REQUIRED,
-        isolation = Isolation.READ_UNCOMMITTED,
+        isolation = Isolation.READ_COMMITTED,
         timeout = 36000,
         rollbackFor = Exception.class)
 public interface HotelMapper {
 
+    @Transactional(propagation = Propagation.REQUIRED,
+            isolation = Isolation.READ_UNCOMMITTED,
+            timeout = 36000,
+            rollbackFor = Exception.class)
 	Hotel selectByCityId(int city_id);
 
 }
