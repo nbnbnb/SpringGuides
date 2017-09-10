@@ -24,6 +24,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.5.6.RELEASE</version>
                 <configuration>
+                    <!--如果不使用IDE，而是通过maven或者gradle的build插件来启动应用，也可以打开spring-boot-maven-plugin的fork配置，使得应用在单独进程中打开（这会使得应用使用自己的类加载器）-->
                     <fork>true</fork>
                 </configuration>
             </plugin>
