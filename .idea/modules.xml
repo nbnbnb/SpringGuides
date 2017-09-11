@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/RestService/RestService.iml" filepath="$PROJECT_DIR$/RestService/RestService.iml" />
       <module fileurl="file://$PROJECT_DIR$/SchedulingTasks/SchedulingTasks.iml" filepath="$PROJECT_DIR$/SchedulingTasks/SchedulingTasks.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringGuides.iml" filepath="$PROJECT_DIR$/SpringGuides.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thymeleaf/Thymeleaf.iml" filepath="$PROJECT_DIR$/Thymeleaf/Thymeleaf.iml" />
     </modules>
   </component>
 </project>

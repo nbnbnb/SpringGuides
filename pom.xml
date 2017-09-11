@@ -12,9 +12,10 @@
     </properties>
 
     <modules>
-        <module>./RestService</module>
-        <module>./SchedulingTasks</module>
-        <module>./MyBatis</module>
+        <module>RestService</module>
+        <module>SchedulingTasks</module>
+        <module>MyBatis</module>
+        <module>Thymeleaf</module>
     </modules>
 
     <build>
@@ -39,15 +40,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <version>1.5.5.RELEASE</version>
-            <optional>true</optional>
-        </dependency>
-    </dependencies>
 
     <dependencyManagement>
         <dependencies>

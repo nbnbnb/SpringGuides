@@ -11,6 +11,7 @@
         <module name="MyBatis" />
         <module name="RestService" />
         <module name="SchedulingTasks" />
+        <module name="Thymeleaf" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -20,6 +21,7 @@
       <module name="RestService" target="1.8" />
       <module name="SchedulingTasks" target="1.8" />
       <module name="SpringGuides" target="1.8" />
+      <module name="Thymeleaf" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
