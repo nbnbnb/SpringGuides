@@ -22,13 +22,13 @@ import org.springframework.transaction.annotation.Transactional;
 import sample.mybatis.domain.City;
 
 import org.springframework.stereotype.Component;
+import sample.mybatis.domain.Hotel;
 
-/**
- * @author Eddú Meléndez
- */
+
+// SqlSession 方式不建议使用
+// 使用 SqlSession.selectOne 方法获得 Mapper.xml 文件中对于的一个方法
+
 @Component
-
-// 设置事务
 @Transactional(propagation = Propagation.REQUIRED,
         isolation = Isolation.READ_UNCOMMITTED,
         timeout = 36000,

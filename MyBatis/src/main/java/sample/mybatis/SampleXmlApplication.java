@@ -33,6 +33,7 @@ public class SampleXmlApplication implements CommandLineRunner {
 
     private final HotelMapper hotelMapper;
 
+    // cityDao 和 hotelMapper 都通过 IoC 进行注入
     public SampleXmlApplication(CityDao cityDao, HotelMapper hotelMapper) {
         this.cityDao = cityDao;
         this.hotelMapper = hotelMapper;
