@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Thymeleaf:war">
+    <output-path>$PROJECT_DIR$/Thymeleaf/target</output-path>
+    <root id="archive" name="gs-thymeleaf-0.1.0.war">
+      <element id="artifact" artifact-name="Thymeleaf:war exploded" />
+    </root>
+  </artifact>
+</component>

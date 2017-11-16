@@ -3,6 +3,8 @@
 <head>
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" th:href="@{site.css}" />
+
 </head>
 <body>
 <p th:text="'Hello, ' + ${name} + '!'"/>
@@ -11,7 +13,7 @@
     Today is: <span th:text="${today}"></span>
 </p>
 
-<h2>hello world</h2>
+<h2 class="myColor">Today is very good! </h2>
 
 </body>
 </html>

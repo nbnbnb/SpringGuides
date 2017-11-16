@@ -16,5 +16,4 @@ public class GreetingController {
         model.addAttribute("today", LocalDateTime.now());
         return "greeting";
     }
-
 }
