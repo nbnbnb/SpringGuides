@@ -12,6 +12,11 @@ import java.time.LocalDateTime;
 public class ResfulController {
     @RequestMapping("/hello")
     public String hello() {
-        return "Hello World! gggg" + LocalDateTime.now();
+        String a = "aaa";
+        String b = "bbb";
+
+        String c = String.valueOf((a.length() / 2 + b.length()));
+
+        return "Hello World! gggg" + c + LocalDateTime.now();
     }
 }
